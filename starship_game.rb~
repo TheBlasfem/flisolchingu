@@ -44,7 +44,7 @@ class Pause < Chingu::GameState
 end
 
 class Player < Chingu::GameObject
-  traits :velocity, :effect, :collision_detection, :bounding_circle
+  traits :velocity, :effect
   def initialize(options={})
     super
     self.input = [:holding_left, :holding_right, :holding_up]
